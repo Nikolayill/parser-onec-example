@@ -34,4 +34,3 @@ public class Document {
         this.sections = sections;
     }
 }
-
