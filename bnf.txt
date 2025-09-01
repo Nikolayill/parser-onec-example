@@ -1,0 +1,9 @@
+<DOCUMENT> ::= 1CClientBankExchange <DOC_BODY> КонецФайла
+<DOC_BODY> ::= <HEADING> <ACCOUNT> <SECTIONS>
+<HEADING> ::= <ITEMS>
+<ACCOUNT> ::= СекцияРасчСчет <ITEMS> КонецРасчСчет
+<SECTIONS> ::= <SECTION_BEGIN> <ITEMS> КонецДокумента
+<SECTION_BEGIN> ::= СекцияДокумент=<SECTION_NAME>
+<ITEMS> ::= <KEY>"="<VALUE> | <ITEMS>
+<KEY> ::= String
+<VALUE> ::= String
